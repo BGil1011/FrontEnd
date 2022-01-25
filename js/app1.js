@@ -12,7 +12,7 @@ function cargarCamisa(){
     const pagina = document.querySelector(".camisa");
     const boton = document.querySelector(".formulario__submit");
     boton.addEventListener("click", e=> e.preventDefault());
-    nombre_producto.textContent = nombre;
-    pagina.children[0].src = `img/${id}.jpg`;
+    nombre_producto.textContent = nombre?? "VuejS";
+    pagina.children[0].src = `img/${id}.jpg`?? "img/1.jpg";
 
 }
