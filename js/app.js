@@ -19,9 +19,8 @@ function producto(e){
     let ev = document.querySelector(".producto a")
     let id = ev.parentElement.id;
     let nombre = ev.children[1].children[0].textContent;
-    let precio = ev.children[1].children[1].textContent; 
     let direccion = ev.href = "/producto.html";   
-    window.location.assign(`/FrontEnd/${direccion}?id=${id}&p=${precio}&n=${nombre}`);
+    window.location.assign(`/FrontEnd/${direccion}?id=${id}&n=${nombre}`);
 
 }
 

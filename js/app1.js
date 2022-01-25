@@ -7,8 +7,7 @@ function inicio(){
 function cargarCamisa(){
     var url = new URL(window.location);
     let id = url.searchParams.get("id");
-    const nombre = url.searchParams.get("n");
-    const precio = url.searchParams.get("p");
+    let nombre = url.searchParams.get("n");
     const nombre_producto = document.querySelector(".contenedor h1");
     const pagina = document.querySelector(".camisa");
     const boton = document.querySelector(".formulario__submit");
