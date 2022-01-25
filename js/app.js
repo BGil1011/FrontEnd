@@ -7,7 +7,7 @@ function inicio(){
 
 
 function camisa(){
-    const camisa = document.querySelectorAll(".producto");
+    const camisa = document.querySelectorAll(".producto a");
 
     camisa.forEach((e)=>{
         e.addEventListener("click", producto);
@@ -16,11 +16,11 @@ function camisa(){
 
 function producto(e){
     e.preventDefault();
-    let ev = document.querySelector(".producto a")
-    let id = ev.parentElement.id;
-    let nombre = ev.children[1].children[0].textContent;
-    let direccion = ev.href = "/producto.html";   
-    window.location.assign(`/FrontEnd/${direccion}?id=${id}&n=${nombre}`);
+    console.log(e);
+    const ev = document.querySelector(".producto a")
+    const id = ev.parentElement.id;
+    const nombre = ev.children[1].children[0].textContent;   
+    window.location.assign(`/FrontEnd/producto.html?id=${id}&n=${nombre}`);
 
 }
 
