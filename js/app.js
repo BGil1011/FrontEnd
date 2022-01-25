@@ -16,11 +16,11 @@ function camisa(){
 
 function producto(e){
     e.preventDefault();
-    const ev = document.querySelector(".producto a")
-    const id = ev.parentElement.id;
-    const nombre = ev.children[1].children[0].textContent;
-    const precio = ev.children[1].children[1].textContent; 
-    const direccion = ev.href = "/producto.html";   
+    let ev = document.querySelector(".producto a")
+    let id = ev.parentElement.id;
+    let nombre = ev.children[1].children[0].textContent;
+    let precio = ev.children[1].children[1].textContent; 
+    let direccion = ev.href = "/producto.html";   
     window.location.assign(`/FrontEnd/${direccion}?id=${id}&p=${precio}&n=${nombre}`);
 
 }
