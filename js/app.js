@@ -21,7 +21,7 @@ function producto(e){
     const nombre = ev.children[1].children[0].textContent;
     const precio = ev.children[1].children[1].textContent; 
     const direccion = ev.href = "/producto.html";   
-    window.location.assign(`${direccion}?id=${id}&p=${precio}&n=${nombre}`);
+    window.location.assign(`FrontEnd/${direccion}?id=${id}&p=${precio}&n=${nombre}`);
 
 }
 
