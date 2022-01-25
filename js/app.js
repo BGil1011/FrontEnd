@@ -16,10 +16,9 @@ function camisa(){
 
 function producto(e){
     e.preventDefault();
-    console.log(e);
-    const id = e.parentElement.id;
-    const nombre = e.children[1].children[0].textContent;   
-    //window.location.assign(`/FrontEnd/producto.html?id=${id}&n=${nombre}`);
+    const id = e.path[1].parentElement.id;
+    const nombre = e.path[1].children[1].children[0].textContent;   
+    window.location.assign(`/FrontEnd/producto.html?id=${id}&n=${nombre}`);
 
 }
 
