@@ -17,9 +17,8 @@ function camisa(){
 function producto(e){
     e.preventDefault();
     console.log(e);
-    const ev = document.querySelector(".producto a")
-    const id = ev.parentElement.id;
-    const nombre = ev.children[1].children[0].textContent;   
+    const id = e.parentElement.id;
+    const nombre = e.children[1].children[0].textContent;   
     //window.location.assign(`/FrontEnd/producto.html?id=${id}&n=${nombre}`);
 
 }
